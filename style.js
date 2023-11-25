@@ -155,7 +155,7 @@ mn.add({
     }, 'move')
     tl1.to(".book-shell", {
         width: isDesktop ? "300px" : "180px",
-        height: isDesktop ? "600px" : "300px",
+        height: isDesktop ? "500px" : "300px",
         left: "50%",
         top: "50%",
         translateX: "-50%",

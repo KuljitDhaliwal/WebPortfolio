@@ -33,7 +33,7 @@ font-family: 'Tilt Prism', cursive; */
 
 body{
     background-color: #262523;
-    background: url(assets/High-Resolution-Background-Images.jpg);
+    background: url(asserts/High-Resolution-Background-Images.jpg);
     width: 100vw;
     overflow-x: hidden;
     position: relative;
@@ -206,7 +206,7 @@ body.stop{
     justify-content: center;
     width: 100%;
     height: 100%;
-    background: url(assets/light-wall-background-hd-wallpaper-preview\ \(1\).jpg);
+    background: url(asserts/light-wall-background-hd-wallpaper-preview\ \(1\).jpg);
     background-size: cover;
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -673,7 +673,7 @@ a{
     width: 400px;
     height: 150px;
     border:5px solid black;
-    background: url(assets/landscape.jpg);
+    background: url(asserts/desktopwallpaper1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
@@ -721,7 +721,7 @@ a{
     width: 800px;
     height: 400px;
     /* background-color: brown; */
-    background: url(assets/wood.jpeg);
+    background: url(asserts/wood.jpeg);
     background-size: cover;
     left: 50%;
     top: 50%;
@@ -795,7 +795,7 @@ a{
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    background: url(assets/green.jpg);
+    background: url(asserts/green.jpg);
     transition: all cubic-bezier(0.19, 1, 0.22, 1);
 }
 
@@ -910,7 +910,7 @@ a{
 }
 
 .back-page.back-cover{
-    background: url(assets/back-cover.jpg);
+    background: url(asserts/back-cover.jpg);
     background-position: -5% 50%;
     background-size: cover;
     padding: 3rem 1rem;
@@ -945,7 +945,7 @@ a{
 }
 
 .front-page.cover-page{
-    background: url(assets/cover.jpg);
+    background: url(asserts/cover.jpg);
     background-position: -5% 50%;
     background-size: cover;
     border-top-left-radius: 5px;
