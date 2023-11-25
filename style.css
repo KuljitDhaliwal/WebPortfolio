@@ -448,6 +448,7 @@ a{
     margin-top: 2rem;
     top: 50%;
     transform: translate(-50%, -50%);
+    will-change: transform;
 }
 
 
