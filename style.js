@@ -22,7 +22,8 @@ mn.add({
             end: "+=500",
             pin: true,
             scrub: 0.2,
-
+            preventOverlaps: "preventOverlaps",
+            fastScrollEnd: "fastScrollEnd"
         }
     })    
     tm1.to(".marquee-part", {
@@ -100,7 +101,9 @@ mn.add({
             trigger: "#section2",
             start: "0% 95%",
             end: "50% 50%",
-            scrub: 0.2
+            scrub: 0.2,
+            preventOverlaps: "preventOverlaps",
+            fastScrollEnd: "fastScrollEnd"
         }
     })
     tl.to(".ham", {
@@ -128,7 +131,9 @@ mn.add({
             start: "top top",
             end: "+=1500px",
             scrub: 0.2,
-            pin: true
+            pin: true,
+            preventOverlaps: "preventOverlaps",
+            fastScrollEnd: "fastScrollEnd"
         }
     })  
     tl1.to(".contact.up", {
@@ -205,6 +210,8 @@ mn.add({
             start: "600% 50%",
             end: "+=200",
             scrub: 0.2,
+            preventOverlaps: "preventOverlaps",
+            fastScrollEnd: "fastScrollEnd"
         }
     })
     te2.from(".smile", {
@@ -230,6 +237,8 @@ mn.add({
         end: "+=200",
         scrub: 0.2,
         pin: true,
+        preventOverlaps: "preventOverlaps",
+        fastScrollEnd: "fastScrollEnd"
     }
 })
 tm2.to(".eye", {
@@ -256,7 +265,9 @@ tm2.to(".smile-teeth", {
             start: "top top",
             end: "+1000px",
             scrub: 0.2,
-            pin: true
+            pin: true,
+            preventOverlaps: "preventOverlaps",
+            fastScrollEnd: "fastScrollEnd"
         }
     })
     tl2.to(".project.one", {
@@ -288,16 +299,16 @@ const overlay = document.querySelector(".overlay");
 const section1 = document.querySelector("#section1");
 const navbar = document.querySelector(".navbar");
 const wrapper = document.querySelector(".wrapper");
-document.addEventListener('click', (e) => {
-    if (e.target.id !== 'ham' && e.target.id !== 'sidebar') {
-        sidebar.classList.remove("come");
-        overlay.classList.remove("come");
-        document.body.classList.remove("stop");
-        hamClass.classList.remove("come");
-    }
-})
+// document.addEventListener('click', (e) => {
+//     if (e.target.id !== 'ham' && e.target.id !== 'sidebar') {
+//         sidebar.classList.remove("come");
+//         overlay.classList.remove("come");
+//         document.body.classList.remove("stop");
+//         hamClass.classList.remove("come");
+//     }
+// })
 let displayBtn = false;
-hamClass.addEventListener("click", (e) => {
+hamClass.addEventListener("click", () => {
     sidebar.classList.toggle("come");
     overlay.classList.toggle("come");
     document.body.classList.toggle("stop");
@@ -308,7 +319,7 @@ hamClass.addEventListener("click", (e) => {
         displayBtn = false;
     }
 })
-document.querySelector(".bars").addEventListener("click", ()=> {
+document.querySelector(".fa-bars").addEventListener("click", ()=> {
     sidebar.classList.toggle("come");
     overlay.classList.toggle("come");
     hamClass.classList.add("come");
@@ -343,7 +354,6 @@ const progressBar=()=> {
     car.style.left = `${scrollPos}%`;
     requestAnimationFrame(progressBar);
 };
-
 progressBar();
 
 
