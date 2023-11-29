@@ -17,19 +17,6 @@
     --marquee-element-width: calc(var(--marquee-width)/var(--marquee-element));
 }
 
-/* font-family: 'Alatsi', sans-serif;
-font-family: 'Bebas Neue', sans-serif;
-font-family: 'Bodoni Moda', serif;
-font-family: 'Bruno Ace SC', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Press Start 2P', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace;
-font-family: 'Tilt Prism', cursive; */
-
-/* html{
-    scroll-snap-type: y mandatory;
-} */
 
 body{
     background-color: #262523;
@@ -105,7 +92,7 @@ body.stop{
     position: absolute;
     background-color: red;
     bottom: 0;
-    will-change: left;
+    will-change: transform;
 }
 
 .car-load img{
@@ -121,10 +108,6 @@ body.stop{
     height: 80px;
     z-index: 2;
 }
-
-
-
-
 
 
 .wrapper-container{
@@ -187,7 +170,7 @@ body.stop{
 
 #section1{
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -197,7 +180,7 @@ body.stop{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     position: relative;
 }
 #section3{
@@ -214,13 +197,13 @@ body.stop{
 }
 #section4{
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     position: relative;
 }
 
 #section5{
     width: 100%;
-    min-height: 100svh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -231,7 +214,7 @@ body.stop{
 }
 #section6{
     width: 100%;
-    height: 100svh;
+    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -443,8 +426,8 @@ a{
 .innerdev1{
     position: absolute;
     width: 100%;
+    /* height: 100%; */
     min-height: 680px;
-    /* background-color: #011627; */
     bottom: 0;
     left: 50%;
     margin-top: 2rem;
@@ -452,10 +435,6 @@ a{
     transform: translate(-50%, -50%);
     will-change: transform;
 }
-
-
-
-
 
 .ipad{
     height: 100%;
@@ -561,11 +540,6 @@ a{
     z-index: 3;
 }
 
-
-
-
-
-
 .dp-image{
     position: absolute;
     left: 50%;
@@ -642,7 +616,6 @@ a{
 .contact.up{
     top: 0;
     transition: all cubic-bezier(0.19, 1, 0.22, 1);
-
 }
 
 .contact.down{
@@ -1076,8 +1049,6 @@ a{
 
 
 
-
-
 /* SECTION4 */
 
 #section4 h1{
@@ -1098,6 +1069,7 @@ a{
     border-radius: 2rem;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     overflow: hidden;
+    will-change: transform;
 }
 
 .project img{
@@ -1350,6 +1322,12 @@ a{
 
 }
 @media screen and (max-width: 768px) {
+    #section1,#section2,#section4,#section5,#section6{
+        height: 100svh;
+    }
+    .wrapper-container{
+        height: 100svh;
+    }
     .container{
         padding: 0 1.5rem;
     }

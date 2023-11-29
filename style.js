@@ -111,7 +111,7 @@ mn.add({
     },"ki")
     tl.to(".innerdev1", {
         left: isDesktop ? "20%" : "50%",
-        top: "150vh",
+        top: "150vh",   
         marginTop: "0",
         zIndex: "9999999999",
         duration: 5
@@ -279,15 +279,16 @@ tm2.to(".smile-teeth", {
     },'same')
     tl2.to(".project.two", {
         width: isDesktop ? "75%" : "85%",
-        height: isDesktop ? "60%" : "400px"
+        height: isDesktop ? "60%" : "450px"
     },'two')
     tl2.to(".project.three", {
         top: "20%",
     }, 'two')
     tl2.to(".project.three", {
         width: isDesktop ? "80%" : "90%",
-        height: isDesktop ? "65%" : "400px"
+        height: isDesktop ? "65%" : "500px"
     }, 'three')
+
 })
 
 const hamBars = document.querySelectorAll("#ham")
