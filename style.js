@@ -300,14 +300,14 @@ const overlay = document.querySelector(".overlay");
 const section1 = document.querySelector("#section1");
 const navbar = document.querySelector(".navbar");
 const wrapper = document.querySelector(".wrapper");
-// document.addEventListener('click', (e) => {
-//     if (e.target.id !== 'ham' && e.target.id !== 'sidebar') {
-//         sidebar.classList.remove("come");
-//         overlay.classList.remove("come");
-//         document.body.classList.remove("stop");
-//         hamClass.classList.remove("come");
-//     }
-// })
+document.addEventListener('click', (e) => {
+    if (e.target.id !== 'ham' && e.target.id !== 'sidebar') {
+        sidebar.classList.remove("come");
+        overlay.classList.remove("come");
+        document.body.classList.remove("stop");
+        hamClass.classList.remove("come");
+    }
+})
 let displayBtn = false;
 hamClass.addEventListener("click", () => {
     sidebar.classList.toggle("come");
