@@ -160,7 +160,7 @@ mn.add({
     }, 'move')
     tl1.to(".book-shell", {
         width: isDesktop ? "300px" : "180px",
-        height: isDesktop ? "500px" : "300px",
+        height: isDesktop ? "500px" : "350px",
         left: "50%",
         top: "50%",
         translateX: "-50%",
@@ -279,14 +279,14 @@ tm2.to(".smile-teeth", {
     },'same')
     tl2.to(".project.two", {
         width: isDesktop ? "75%" : "85%",
-        height: isDesktop ? "60%" : "450px"
+        height: isDesktop ? "60%" : "400px"
     },'two')
     tl2.to(".project.three", {
         top: "20%",
     }, 'two')
     tl2.to(".project.three", {
         width: isDesktop ? "80%" : "90%",
-        height: isDesktop ? "65%" : "500px"
+        height: isDesktop ? "65%" : "400px"
     }, 'three')
 
 })
@@ -301,7 +301,7 @@ const section1 = document.querySelector("#section1");
 const navbar = document.querySelector(".navbar");
 const wrapper = document.querySelector(".wrapper");
 document.addEventListener('click', (e) => {
-    if (e.target.id !== 'ham' && e.target.id !== 'sidebar') {
+    if (e.target.id !== 'ham' && e.target.id !== 'sidebar' && e.target.id !== 'fa-bars') {
         sidebar.classList.remove("come");
         overlay.classList.remove("come");
         document.body.classList.remove("stop");

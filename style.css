@@ -845,14 +845,13 @@ a{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    border-left: 2px solid red;
     opacity: 0;
-    padding-left: 2rem;
+    padding-left: 1rem;
     color: #ffff;
 }
 
 
-.real-qual::before{
+/* .real-qual::before{
     content: '';
     position: absolute;
     width: 20px;
@@ -869,7 +868,7 @@ a{
     border-radius: 50%;
     background-color: #0a55d8;
     left: -12px;
-}
+} */
 
 .real-qual h4{
     font-size: 1.3rem;
@@ -877,7 +876,7 @@ a{
 
 .higher-sec{
     margin-top: 1rem;
-    padding: 10px;
+    padding: 0px;
 }
 
 .higher-sec:first-child{
@@ -1455,6 +1454,12 @@ a{
     }
     .skill-card > img{
         height: 20%;
+    }
+    .desc{
+        font-size: 12px;
+    }
+    .real-qual{
+        padding-left: 2px;
     }
 }
 
