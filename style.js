@@ -288,6 +288,20 @@ tm2.to(".smile-teeth", {
         width: isDesktop ? "80%" : "90%",
         height: isDesktop ? "65%" : "400px"
     }, 'three')
+    tl2.to(".project.four", {
+        top: "25%",
+    }, 'three')
+    tl2.to(".project.four", {
+        width: isDesktop ? "85%" : "95%",
+        height: isDesktop ? "70%" : "400px"
+    }, 'four')
+    tl2.to(".project.five", {
+        top: "30%",
+    }, 'four')
+    tl2.to(".project.five", {
+        width: isDesktop ? "90%" : "100%",
+        height: isDesktop ? "75%" : "400px"
+    }, 'five')
 
 })
 
